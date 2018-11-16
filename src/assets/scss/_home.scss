@@ -1,0 +1,42 @@
+@import "variables";
+.grid {
+    margin-top: 63px;
+}
+
+.mdl-cell {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .mdl-cell:last-child {
+    margin-bottom: 75px;
+  }
+
+  .image-card {
+    position: relative;
+
+
+    .image-card__picture { 
+        overflow: hidden; 
+        border-radius: 10px !important;
+        img {
+            width:100%;
+            box-shadow: 0 20px 34px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+  }
+
+  .image-card__comment {
+    position: absolute;
+    bottom: 0;
+    height: 52px;
+    padding: 16px;
+    text-align: right;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    border-radius: 0 0 10px 10px;
+    p {
+        color: $light-grey !important;
+        font-size: 12px;
+        font-weight: bold;
+      }
+  }

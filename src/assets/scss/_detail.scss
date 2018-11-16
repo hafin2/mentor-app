@@ -1,0 +1,118 @@
+@import "variables";
+
+.detail {
+    margin: 0;
+    width: 100%
+}
+
+.picture {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0,.01,.45,1);
+    img {
+        width:100%;
+        box-shadow: 0 20px 64px 0 rgba(0,0,0,.2);
+
+      }
+}
+  .info:last-child {
+    margin-bottom: 75px;
+  }
+
+  .info {
+    margin: 15px;
+    text-align: left;
+    color: $dark;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 100;
+    position: absolute;
+    box-shadow: 0 20px 64px 0 rgba(0,0,0,.08);
+    animation-name: slide-top;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0,.01,.45,1);
+
+
+      .comment {
+        padding: 0px;
+        margin: 20px;
+        text-align: left;
+        h3 {
+            display: inline-block;
+            margin: 0px 0px 15px 0px;
+            
+          }
+          p {
+            // right: 25px;
+            // display: inline-block;
+            position: absolute;
+            margin-top: 9px;
+            font-size: 12px;
+            text-align: start;
+            color: $green;
+            margin-top: -16px;
+          } 
+      }
+      .description {
+        margin: 20px;
+        span {
+        font-size: 13px;
+        opacity: 0.8;
+        }
+      }
+  }
+
+  .actions {
+    text-align: center;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
+    z-index: 99;
+    i {
+        font-size: 34px;
+        margin: 5px;
+        color: $green !important;
+    }
+  }
+
+
+  .mdl-grid {
+    margin-top: 30px;
+  }
+
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0.9;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.01);
+    }
+  }
+
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-40px);
+    }
+    100% {
+      -webkit-transform: translateY(-55px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+              transform: translateY(-40px);
+    }
+    100% {
+              transform: translateY(-55px);
+    }
+  }

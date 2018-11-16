@@ -1,0 +1,50 @@
+@import "variables";
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
+  
+  nav {
+      position: fixed;
+    text-align: center;
+      width: 100%;
+    // -webkit-backdrop-filter: blur(10px) saturate(2);
+    /* background-color: rgba(223, 223, 223, 0.87); */
+    background-color: rgb(255, 255, 255);
+  
+  }
+  
+  .topNav {
+    top:0; 
+    left:0;
+    right:0;
+    height: 55px;
+    z-index: 99;
+    box-shadow: 0 -10px 54px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  nav li {
+      display: inline-block;
+  }
+
+  ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .material-icons {
+    color: $grey !important;
+        font-size: 28px;
+  }
+  
+  li a.router-link-exact-active i {
+   color: $green !important;
+  }
+  
+  .content {
+    margin-top: 55px;
+  }
