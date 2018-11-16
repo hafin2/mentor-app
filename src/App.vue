@@ -35,6 +35,4 @@
 <style lang="scss">
   @import "./assets/scss/style";
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-  @import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
-  @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 </style>

@@ -1,11 +1,11 @@
 workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 
-var cacheName = 'v1';
+var cacheName = 'v2';
 var cacheFiles = [
     "./",
     "./js/",
     "./css/",
-    "./index.html"
+    "./manifest.json"
   
 ]
 

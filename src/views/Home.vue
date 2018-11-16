@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="grid">
-      <div v-for="picture in pictures" :key="picture.id" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone picture">
+      <div v-for="picture in pictures" :key="picture.id" class="mdl-cell">
         <router-link :to="`/picture/${picture.id}`"> 
         <div class="image-card">
           <div class="image-card__picture">
-            <img :src="picture.url" />
+            <img :src="picture.url" alt="unsplash image"/>
           </div>
           <div class="image-card__comment mdl-card__actions">
-            <p style="opacity: 0.8">{{ picture.author }}</p>
+            <p>{{ picture.author }}</p>
           </div>
         </div>
          </router-link>
@@ -39,6 +39,7 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
   // import data from '../data'
   import axios from 'axios';
+  
 
   export default {
     // methods: {
@@ -66,5 +67,6 @@
             .then(response => (this.pictures = response.data.pictures));
     }
   }
+  
 };
 </script>

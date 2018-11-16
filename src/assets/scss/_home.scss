@@ -4,8 +4,12 @@
 }
 
 .mdl-cell {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px;
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0,.01,.45,1);
   }
 
   .mdl-cell:last-child {
@@ -16,12 +20,14 @@
     position: relative;
 
 
+
     .image-card__picture { 
         overflow: hidden; 
         border-radius: 10px !important;
         img {
             width:100%;
             box-shadow: 0 20px 34px 0 rgba(0, 0, 0, 0.1);
+            vertical-align: middle;
         }
     }
   }
@@ -34,9 +40,12 @@
     text-align: right;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
     p {
         color: $light-grey !important;
         font-size: 12px;
         font-weight: bold;
+        opacity: 0.8
       }
   }
